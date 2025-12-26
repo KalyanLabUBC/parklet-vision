@@ -1,1 +1,4 @@
 .env
+dataset.json
+venv
+.ipynb_checkpoints

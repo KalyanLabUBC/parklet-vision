@@ -5,3 +5,13 @@ dataclasses
 opencv-python
 matplotlib
 numpy
+pandas
+geopandas
+ipykernel
+torch
+torchvision
+transformers
+datasets
+accelerate
+opencv-python
+huggingface_hub
