@@ -1,17 +1,27 @@
-folium
+# python standard library
 requests
-dotenv
 dataclasses
+
+# standard imports
 opencv-python
 matplotlib
 numpy
 pandas
-geopandas
+dotenv
+
+# jupyter
 ipykernel
+
+# GIS
+folium
+geopandas
+
+# ML
 torch
 torchvision
+huggingface_hub
 transformers
 datasets
 accelerate
-opencv-python
-huggingface_hub
+evaluate
+wandb

@@ -1,0 +1,115 @@
+2026-05-02 01:22:33,610 INFO    MainThread:30497 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-05-02 01:22:33,610 INFO    MainThread:30497 [wandb_setup.py:_flush():81] Configure stats pid to 30497
+2026-05-02 01:22:33,610 INFO    MainThread:30497 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-02 01:22:33,610 WARNING MainThread:30497 [wandb_setup.py:_flush():81] interrupted
+Traceback (most recent call last):
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_30497/838732453.py", line 3, in <module>
+    wandb.init(
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1524, in init
+    wi.maybe_login(init_settings)
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 200, in maybe_login
+    wandb_login._login(
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_login.py", line 190, in _login
+    auth = _find_or_prompt_for_key(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_login.py", line 266, in _find_or_prompt_for_key
+    auth = wbauth.authenticate_session(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/authenticate.py", line 131, in authenticate_session
+    return _use_prompted_auth(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/authenticate.py", line 263, in _use_prompted_auth
+    api_key = prompt.prompt_and_save_api_key(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/prompt.py", line 52, in prompt_and_save_api_key
+    api_key = _prompt_api_key(
+              ^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/prompt.py", line 90, in _prompt_api_key
+    choice = util.prompt_choices(choices, input_timeout=input_timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/util.py", line 1343, in prompt_choices
+    choice = terminput("Enter your choice: ", timeout=input_timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/errors/term.py", line 321, in terminput
+    return _terminput(prefixed_prompt, timeout=timeout, hide=hide)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/errors/term.py", line 382, in _terminput
+    raise KeyboardInterrupt from None
+KeyboardInterrupt
+2026-05-02 01:22:33,611 WARNING MainThread:30497 [wandb_setup.py:_flush():81] interrupted
+Traceback (most recent call last):
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_30497/4032920361.py", line 1, in <module>
+    trainer.train()
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2573, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/trainer_callback.py", line 506, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/trainer_callback.py", line 556, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/integrations/integration_utils.py", line 966, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/transformers/integrations/integration_utils.py", line 893, in setup
+    self._wandb.init(
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1524, in init
+    wi.maybe_login(init_settings)
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 200, in maybe_login
+    wandb_login._login(
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_login.py", line 190, in _login
+    auth = _find_or_prompt_for_key(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/wandb_login.py", line 266, in _find_or_prompt_for_key
+    auth = wbauth.authenticate_session(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/authenticate.py", line 131, in authenticate_session
+    return _use_prompted_auth(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/authenticate.py", line 263, in _use_prompted_auth
+    api_key = prompt.prompt_and_save_api_key(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/prompt.py", line 52, in prompt_and_save_api_key
+    api_key = _prompt_api_key(
+              ^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/sdk/lib/wbauth/prompt.py", line 90, in _prompt_api_key
+    choice = util.prompt_choices(choices, input_timeout=input_timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/util.py", line 1343, in prompt_choices
+    choice = terminput("Enter your choice: ", timeout=input_timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/errors/term.py", line 321, in terminput
+    return _terminput(prefixed_prompt, timeout=timeout, hide=hide)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mufaro/Programming/parklet-vision/venv/lib/python3.12/site-packages/wandb/errors/term.py", line 382, in _terminput
+    raise KeyboardInterrupt from None
+KeyboardInterrupt
+2026-05-02 01:22:33,613 INFO    MainThread:30497 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/mufaro/Programming/parklet-vision/wandb/offline-run-20260502_012233-7ur420er/logs/debug.log
+2026-05-02 01:22:33,613 INFO    MainThread:30497 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/mufaro/Programming/parklet-vision/wandb/offline-run-20260502_012233-7ur420er/logs/debug-internal.log
+2026-05-02 01:22:33,614 INFO    MainThread:30497 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x70aa1ecdbdd0>
+2026-05-02 01:22:33,614 INFO    MainThread:30497 [wandb_init.py:init():850] calling init triggers
+2026-05-02 01:22:33,614 INFO    MainThread:30497 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-05-02 01:22:33,614 INFO    MainThread:30497 [wandb_init.py:init():898] starting backend
+2026-05-02 01:22:34,032 INFO    MainThread:30497 [wandb_init.py:init():913] sending inform_init request
+2026-05-02 01:22:34,143 INFO    MainThread:30497 [wandb_init.py:init():918] backend started and connected
+2026-05-02 01:22:34,147 INFO    MainThread:30497 [wandb_run.py:_label_probe_notebook():1345] probe notebook
+2026-05-02 01:22:34,147 INFO    MainThread:30497 [wandb_run.py:_label_probe_notebook():1355] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2026-05-02 01:22:34,147 INFO    MainThread:30497 [wandb_init.py:init():988] updated telemetry
+2026-05-02 01:22:34,202 INFO    MainThread:30497 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-05-02 01:22:34,207 INFO    MainThread:30497 [wandb_init.py:init():1056] starting run threads in backend
+2026-05-02 01:22:34,363 INFO    MainThread:30497 [wandb_run.py:_console_start():2554] atexit reg
+2026-05-02 01:22:34,364 INFO    MainThread:30497 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-05-02 01:22:34,364 INFO    MainThread:30497 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-05-02 01:22:34,364 INFO    MainThread:30497 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-05-02 01:22:34,365 INFO    MainThread:30497 [wandb_init.py:init():1094] run started, returning control to user process
+2026-05-02 01:22:34,367 INFO    MainThread:30497 [wandb_run.py:_config_callback():1415] config_cb None None {'return_dict': True, 'output_hidden_states': False, 'torchscript': False, 'dtype': 'float32', 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'architectures': ['SegformerForImageClassification'], 'finetuning_task': None, 'id2label': {0: 'unlabeled', 1: 'flat-road', 2: 'flat-sidewalk', 3: 'flat-crosswalk', 4: 'flat-cyclinglane', 5: 'flat-parkingdriveway', 6: 'flat-railtrack', 7: 'flat-curb', 8: 'human-person', 9: 'human-rider', 10: 'vehicle-car', 11: 'vehicle-truck', 12: 'vehicle-bus', 13: 'vehicle-tramtrain', 14: 'vehicle-motorcycle', 15: 'vehicle-bicycle', 16: 'vehicle-caravan', 17: 'vehicle-cartrailer', 18: 'construction-building', 19: 'construction-door', 20: 'construction-wall', 21: 'construction-fenceguardrail', 22: 'construction-bridge', 23: 'construction-tunnel', 24: 'construction-stairs', 25: 'object-pole', 26: 'object-trafficsign', 27: 'object-trafficlight', 28: 'nature-vegetation', 29: 'nature-terrain', 30: 'sky', 31: 'void-ground', 32: 'void-dynamic', 33: 'void-static', 34: 'void-unclear'}, 'label2id': {'unlabeled': 0, 'flat-road': 1, 'flat-sidewalk': 2, 'flat-crosswalk': 3, 'flat-cyclinglane': 4, 'flat-parkingdriveway': 5, 'flat-railtrack': 6, 'flat-curb': 7, 'human-person': 8, 'human-rider': 9, 'vehicle-car': 10, 'vehicle-truck': 11, 'vehicle-bus': 12, 'vehicle-tramtrain': 13, 'vehicle-motorcycle': 14, 'vehicle-bicycle': 15, 'vehicle-caravan': 16, 'vehicle-cartrailer': 17, 'construction-building': 18, 'construction-door': 19, 'construction-wall': 20, 'construction-fenceguardrail': 21, 'construction-bridge': 22, 'construction-tunnel': 23, 'construction-stairs': 24, 'object-pole': 25, 'object-trafficsign': 26, 'object-trafficlight': 27, 'nature-vegetation': 28, 'nature-terrain': 29, 'sky': 30, 'void-ground': 31, 'void-dynamic': 32, 'void-static': 33, 'void-unclear': 34}, 'task_specific_params': None, 'problem_type': None, 'tokenizer_class': None, 'prefix': None, 'bos_token_id': None, 'pad_token_id': None, 'eos_token_id': None, 'sep_token_id': None, 'decoder_start_token_id': None, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'num_beam_groups': 1, 'diversity_penalty': 0.0, '_name_or_path': 'nvidia/mit-b0', 'transformers_version': '4.57.6', 'downsampling_rates': [1, 4, 8, 16], 'image_size': 224, 'model_type': 'segformer', 'tf_legacy_loss': False, 'use_bfloat16': False, 'num_channels': 3, 'num_encoder_blocks': 4, 'depths': [2, 2, 2, 2], 'sr_ratios': [8, 4, 2, 1], 'hidden_sizes': [32, 64, 160, 256], 'patch_sizes': [7, 3, 3, 3], 'strides': [4, 2, 2, 2], 'mlp_ratios': [4, 4, 4, 4], 'num_attention_heads': [1, 2, 5, 8], 'hidden_act': 'gelu', 'hidden_dropout_prob': 0.0, 'attention_probs_dropout_prob': 0.0, 'classifier_dropout_prob': 0.1, 'initializer_range': 0.02, 'drop_path_rate': 0.1, 'layer_norm_eps': 1e-06, 'decoder_hidden_size': 256, 'reshape_last_stage': True, 'semantic_loss_ignore_index': 255, 'output_attentions': False, 'output_dir': 'test-segformer-b0-segments-sidewalk-finetuned', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'steps', 'prediction_loss_only': False, 'per_device_train_batch_size': 8, 'per_device_eval_batch_size': 8, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': 5, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 6e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 20, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'lr_scheduler_kwargs': None, 'warmup_ratio': 0.0, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': 'test-segformer-b0-segments-sidewalk-finetuned/runs/May02_01-17-15_mufaro-server', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 1, 'logging_nan_inf_filter': True, 'save_strategy': 'steps', 'save_steps': 20, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': 20, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': None, 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'parallelism_config': None, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'adamw_torch_fused', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True}
+2026-05-02 01:22:34,371 INFO    MainThread:30497 [wandb_config.py:__setitem__():155] [no run ID] config set model/num_parameters = 3723139 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x70aa1ec2d730>>
+2026-05-02 01:22:34,371 INFO    MainThread:30497 [wandb_run.py:_config_callback():1415] config_cb model/num_parameters 3723139 None
