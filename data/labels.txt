@@ -1,0 +1,5 @@
+sidewalk
+parking
+roadway
+restricted_zone
+driveway
