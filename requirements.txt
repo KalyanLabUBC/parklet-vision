@@ -3,7 +3,6 @@ requests
 dataclasses
 
 # standard imports
-opencv-python
 matplotlib
 numpy
 pandas
@@ -11,7 +10,6 @@ dotenv
 
 # jupyter
 ipykernel
-ipynb
 
 # GIS
 folium
