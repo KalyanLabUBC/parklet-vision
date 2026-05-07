@@ -29,15 +29,31 @@ legend_patches = [
 ]
 
 def show_legend():
-    fig, ax = plt.subplots(figsize=(18, 2))
-
-    ax.legend(
-        handles=legend_patches, 
-        loc='center', 
-        bbox_to_anchor=(0.5, 0.5), 
-        ncol=5, 
-        fontsize=20
-    )
-
+    fig, ax = plt.subplots(figsize=(5, 1))
+    ax.legend(handles=legend_patches, ncol=3, fontsize=10)
     ax.axis('off')
+    plt.show()
+
+
+# +
+from numpy.typing import NDArray
+
+def append_mask_to_segmentation_map(segmentation_map: NDArray, mask, label):
+    mask = np.asarray(mask)
+    
+    label_index = list(id2label.values()).index(label)
+    color = palette[label_index]
+    for c in range(3):
+        segmentation_map[:, :, c] = np.where(mask, color[c], segmentation_map[:, :, c])
+        
+def plot_segmentation_map_over_image(image: NDArray, segmentation_map: NDArray, legend: bool = True):
+    if type(image) is not NDArray:
+        image = np.array(image)
+        
+    if legend:
+        show_legend()
+    plt.figure(figsize=(6, 6))
+    plt.imshow(image)
+    plt.imshow(segmentation_map, alpha=0.3)
+    plt.axis('off')
     plt.show()
