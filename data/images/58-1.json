@@ -1,0 +1,36 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "parking",
+      "points": [
+        [
+          375.8441558441558,
+          363.5064935064935
+        ],
+        [
+          629.7402597402597,
+          565.4545454545454
+        ],
+        [
+          638.8311688311688,
+          475.8441558441558
+        ],
+        [
+          419.3506493506493,
+          361.55844155844153
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "58-1.png",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

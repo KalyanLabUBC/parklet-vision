@@ -1,0 +1,62 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "parking",
+      "points": [
+        [
+          255.06493506493504,
+          341.4285714285714
+        ],
+        [
+          0.0,
+          438.93440736478703
+        ],
+        [
+          0.0,
+          394.67532467532465
+        ],
+        [
+          238.8311688311688,
+          341.4285714285714
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "parking",
+      "points": [
+        [
+          357.6623376623377,
+          341.4285714285714
+        ],
+        [
+          640.0,
+          554.4155844155844
+        ],
+        [
+          640.0,
+          455.70129870129887
+        ],
+        [
+          378.4415584415584,
+          340.77922077922074
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "55-3.png",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

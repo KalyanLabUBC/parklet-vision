@@ -1,0 +1,62 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "sidewalk",
+      "points": [
+        [
+          639.4805194805194,
+          419.35064935064935
+        ],
+        [
+          638.1818181818181,
+          369.35064935064935
+        ],
+        [
+          0.0,
+          354.43379790940764
+        ],
+        [
+          0.0,
+          394.025974025974
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "roadway",
+      "points": [
+        [
+          3.116883116883116,
+          402.46753246753246
+        ],
+        [
+          640.0,
+          423.1371670925423
+        ],
+        [
+          640.0,
+          637.5324675324675
+        ],
+        [
+          1.1368683772161603e-13,
+          638.8256580760117
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "74-4.png",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

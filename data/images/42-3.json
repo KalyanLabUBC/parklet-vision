@@ -3,7 +3,7 @@
   "flags": {},
   "shapes": [
     {
-      "label": "driveway",
+      "label": "restricted_zone",
       "points": [
         [
           66.75324675324674,
@@ -145,7 +145,7 @@
       "mask": null
     },
     {
-      "label": "driveway",
+      "label": "restricted_zone",
       "points": [
         [
           338.4137931034483,
@@ -210,6 +210,32 @@
         [
           640.0,
           428.79120879120876
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "driveway",
+      "points": [
+        [
+          8.961038961038952,
+          390.1298701298701
+        ],
+        [
+          62.85714285714286,
+          417.4025974025974
+        ],
+        [
+          3.116883116883116,
+          434.93506493506493
+        ],
+        [
+          0.0,
+          396.2857142857144
         ]
       ],
       "group_id": null,
