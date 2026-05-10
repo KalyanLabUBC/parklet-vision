@@ -1,0 +1,110 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "parking",
+      "points": [
+        [
+          4.415584415584419,
+          453.1168831168831
+        ],
+        [
+          640.0,
+          463.87877063175864
+        ],
+        [
+          640.0,
+          555.7142857142857
+        ],
+        [
+          0.0,
+          558.2671377286455
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "roadway",
+      "points": [
+        [
+          0.5194805194805099,
+          558.3116883116883
+        ],
+        [
+          640.0,
+          557.6631279471036
+        ],
+        [
+          640.0,
+          638.8311688311688
+        ],
+        [
+          0.0,
+          639.4790732652648
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "roadway",
+      "points": [
+        [
+          91.42857142857142,
+          403.76623376623377
+        ],
+        [
+          640.0,
+          400.311337649814
+        ],
+        [
+          640.0,
+          461.55844155844153
+        ],
+        [
+          0.0,
+          456.37520608567377
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "driveway",
+      "points": [
+        [
+          3.7662337662337677,
+          402.46753246753246
+        ],
+        [
+          90.12987012987011,
+          400.5194805194805
+        ],
+        [
+          0.0,
+          458.5051312324039
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "141-2.png",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}
