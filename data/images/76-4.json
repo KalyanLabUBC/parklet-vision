@@ -1,0 +1,36 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "sidewalk",
+      "points": [
+        [
+          1.818181818181813,
+          358.9610389610389
+        ],
+        [
+          640.0,
+          375.1585470367196
+        ],
+        [
+          640.0,
+          409.6103896103896
+        ],
+        [
+          1.1368683772161603e-13,
+          395.38529363140395
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "76-4.png",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}
