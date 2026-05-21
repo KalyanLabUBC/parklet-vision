@@ -13,14 +13,27 @@ id2label = {
 
 label2id = { v: k for k, v in id2label.items() }
 
+# +
+"""
 palette = [
   [0,   0,   0  ], # _background_
   [216, 82,  24 ], # sidewalk
-  [255, 255, 0  ], # parking
+  [255, 255, 0  ], # parking -> driveway
   [125, 46,  141], # roadway
-  [118, 171, 47 ], # restricted_zone
-  [161, 19,  46 ], # driveway
+  [118, 171, 47 ], # restricted_zone -> parking
+  [161, 19,  46 ], # driveway -> restricted_zone
 ]
+"""
+
+palette = [
+  [0,   0,   0  ], # _background_
+  [216, 82,  24 ], # sidewalk
+  [118, 171, 47 ], # parking
+  [125, 46,  141], # roadway
+  [161, 19,  46 ], # restricted_zone
+  [255, 255, 0  ], # driveway
+]
+# -
 
 legend_patches = [
     patches.Patch(color=np.array(color)/255, label=label) \
